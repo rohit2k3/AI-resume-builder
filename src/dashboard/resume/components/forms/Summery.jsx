@@ -27,6 +27,8 @@ function Summery({enabledNext}) {
         const PROMPT=prompt.replace('{jobTitle}',resumeInfo?.jobTitle);
         console.log(PROMPT);
         const result=await AIChatSession.sendMessage(PROMPT);
+        console.log(result);
+        
         console.log(JSON.parse(result.response.text()))
        
         setAiGenerateSummeryList(JSON.parse(result.response.text()))
@@ -51,6 +53,8 @@ function Summery({enabledNext}) {
             setLoading(false);
         })
     }
+    console.log(aiGeneratedSummeryList , "aiGeneratedSummeryList");
+    
     return (
     <div>
          <div className='p-5 shadow-lg rounded-lg border-t-primary border-t-4 mt-10'>
@@ -81,7 +85,7 @@ function Summery({enabledNext}) {
         
        {aiGeneratedSummeryList&& <div className='my-5'>
             <h2 className='font-bold text-lg'>Suggestions</h2>
-            {aiGeneratedSummeryList?.map((item,index)=>(
+            {aiGeneratedSummeryList.summaries?.map((item,index)=>(
                 <div key={index} 
                 onClick={()=>setSummery(item?.summary)}
                 className='p-5 shadow-lg my-4 rounded-lg cursor-pointer'>

@@ -98,7 +98,7 @@ function Education() {
               defaultValue={item?.degree} />
             </div>
             <div>
-              <label>Major</label>
+              <label>Branch</label>
               <Input name="major" 
               onChange={(e)=>handleChange(e,index)}
               defaultValue={item?.major} />

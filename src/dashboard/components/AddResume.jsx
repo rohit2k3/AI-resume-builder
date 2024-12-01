@@ -61,10 +61,9 @@ function AddResume() {
             <PlusSquare  />
         </div>
 
-        <Dialog open={openDialog}>
-       
+        <Dialog open={openDialog} onOpenChange={setOpenDialog}>
         <DialogContent>
-            <DialogHeader>
+            <DialogHeader >
             <DialogTitle>Create New Resume</DialogTitle>
             <DialogDescription>
                 <p>Add a title for your new resume</p>
