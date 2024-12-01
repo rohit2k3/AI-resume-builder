@@ -50,7 +50,7 @@ yarn strapi deploy
 
 Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/strapi). Your feedback and contributions are welcome!
 
-[Click once and wait for load if backend not loaded]([https://github.com/strapi/strapi](https://ai-resume-builder-strip-backend.onrender.com/))
+[Click once and wait for load if backend not loaded](https://ai-resume-builder-strip-backend.onrender.com)
 
 
 ## ✨ Community
